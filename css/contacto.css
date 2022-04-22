@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family:'Source Sans Pro', sans-serif;;
+}
+
+/*Portada*/
+
+.inicio-content-cover{
+
+    width: 100%;
+    height: 500px;
+    position: relative;
+    margin-top: 80px;
+    background-image: url(../img/img6.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.inicio-content-cover:before{
+
+    content: '';
+    width: 100%;
+    height: 100%;
+    background:rgba(212, 175, 55, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.content-info-cover{
+
+    max-width: 800px;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+
+}
+
+.content-info-cover h1{
+
+    font-size: 60px;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 20px;
+
+}
+
+.content-info-cover p{
+
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+
+}

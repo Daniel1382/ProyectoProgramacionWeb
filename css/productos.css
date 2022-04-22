@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family:'Source Sans Pro', sans-serif;;
+}
+
+/*Portada*/
+
+.producto-content-cover{
+
+    width: 100%;
+    height: 500px;
+    position: relative;
+    margin-top: 80px;
+    background-image: url(../img/img5.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.producto-content-cover:before{
+
+    content: '';
+    width: 100%;
+    height: 100%;
+    background:rgba(212, 175, 55, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.content-info-cover{
+
+    max-width: 800px;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+
+}
+
+.content-info-cover h1{
+
+    font-size: 60px;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 20px;
+
+}
+
+.content-info-cover p{
+
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+
+}
+
+
+/*Categorias*/
+
+input[type="radio"]{
+
+    display: none;
+
+}
+
+.container-category{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.container-category label{
+    padding: 6px 40px;
+    margin: 10px;
+    font-size: 20px;
+    background: #e2e2e2;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container-category label:hover{
+    opacity: 0.7;
+}
+
+/*Publicaciones*/
+
+.container-post{
+
+    max-width: 1200px;
+    margin: auto;
+
+}
+
+.productos{
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+
+    margin-top: 20px;
+    padding: 20px;
+
+}
+
+.productos .post{
+
+    background: #fff;
+    box-shadow: 0 0 20px -20px black;
+    border-radius: 6px;
+    overflow: hidden;
+    padding-bottom: 6px;
+
+}
+
+.productos .post .ctn-img{
+
+    width: 100%;
+
+}
+
+.productos .post .ctn-img img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.post h2{
+
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 0px 20px;
+
+}
+
+.post span{
+
+    display: block;
+    margin-top: 10px;
+    padding: 0px 20px;
+
+}
+
+.ctn-tag{
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 16px;
+    margin-top: 10px;
+
+}
+
+.ctn-tag li{
+
+    list-style: none;
+    font-size: 14px;
+    margin: 4px;
+    padding: 6px 10px;
+    background:#e8e8e8;
+    cursor: default;
+
+}
+
+.post button{
+
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px 50px;
+    font-size: 16px;
+    background: gold;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+
+}
+
+.post button:hover{
+
+    opacity: 0.5;
+
+}
+
+/*Sistema de filtrado*/
+
+[value="Auto"]:checked ~ .productos .post:not([data-category~="Auto"]),
+[value="Motor"]:checked ~ .productos .post:not([data-category~="Motor"]),
+[value="Filtro"]:checked ~ .productos .post:not([data-category~="Filtro"]),
+[value="Ofertas"]:checked ~ .productos .post:not([data-category~="Ofertas"]){
+    display: none;
+}
+
+[value="Auto"]:checked ~ .container-category [for="Auto"],
+[value="Motor"]:checked ~ .container-category [for="Motor"],
+[value="Filtro"]:checked ~ .container-category [for="Filtro"],
+[value="Todos"]:checked ~ .container-category [for="Todos"],
+[value="Ofertas"]:checked ~ .container-category [for="Ofertas"]{
+    background: gold;
+    color: white;
+}
+
+@media screen and (max-width: 1200px){
+
+    .productos{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+@media screen and (max-width: 900px){
+
+    .productos{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media screen and (max-width: 580px){
+
+    .productos{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
