@@ -1,40 +1,53 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+    <head>
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum=scale=1.0, minimum-scale=1.0">
 
-    <title>Online Repair Shop</title>
+        <!-- Titulo de la pagina -->
+        <title>Online Repair Shop</title>
 
-    <script src="https://kit.fontawesome.com/0c92c3a794.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="img/img1.png" type="image/x-icon">
+        <!-- Pagina de iconos -->
+        <script src="https://kit.fontawesome.com/0c92c3a794.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/productos.css">
+        <!-- Icono del navegador -->
+        <link rel="shortcut icon" href="img/img1.png" type="image/x-icon">
 
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum=scale=1.0, minimum-scale=1.0">
+        <!-- Enlaces Css -->
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="css/productos.css">
 
-</head>
+    </head>
+
 <body>
+
     <!-- Menu y logo -->
     <header>
 
         <div class="header-content">
 
             <div class="logo">
+
                 <img src="img/img1.png" alt="">
                 <h1>Online Repair <b>Shop</b></h1>
+
             </div>
 
             <div class="menu" id="show-menu">
+
                 <nav>
+
                     <ul>
+
                         <li><a href="index.html" >Inicio</a></li>
                         <li class="menu-select"><a href="productos.html" class="text-menu-selected">Productos</a></li>
                         <li><a href="contacto.html">Contacto</a></li>
+
                     </ul>
+
                 </nav>
 
             </div>
@@ -42,7 +55,9 @@
         </div>
 
         <div id="icon-menu">
+
             <i class="fa-solid fa-bars"></i>
+
         </div>
         
     </header>
@@ -50,19 +65,24 @@
     <!-- Portada -->
     <div class="container-all"id="move-content">
 
-    <div class="producto-content-cover">
-        <div class="content-info-cover">
-            <h1>Tus refacciones en linea</h1>
-            <p>
-                Encuentra todas las refacciones que necesites desde la comodidad de tu hogar.
-            </p>
+        <div class="producto-content-cover">
+
+            <div class="content-info-cover">
+
+                <h1>Tus refacciones en linea</h1>
+                <p>Encuentra todas las refacciones que necesites desde la comodidad de tu hogar.</p>
+
+            </div>
+
         </div>
+
     </div>
 
+    <!-- Categorias -->
     <div class="container-post">
 
         <input type="radio" id="Todos" name="categories" value="Todos">
-        <input type="radio" id="Auto" name="categories" value="Auto">
+        <input type="radio" id="Electrico" name="categories" value="Electrico">
         <input type="radio" id="Motor" name="categories" value="Motor">
         <input type="radio" id="Filtro" name="categories" value="Filtro">
         <input type="radio" id="Ofertas" name="categories" value="Ofertas">
@@ -70,105 +90,350 @@
         <div class="container-category">
 
             <label for="Todos">Todos</label>
-            <label for="Auto">Auto</label>
+            <label for="Electrico">Electrico</label>
             <label for="Motor">Motor</label>
             <label for="Filtro">Filtro</label>
             <label for="Ofertas">Ofertas</label>
 
         </div>
 
+        <!-- Ejemplos de venta -->
         <div class="productos">
-
-            <div class="post" data-category="Auto">
-
-                <div class="ctn-img">
-                    <img src="img/Publicaciones/img1.jpg" alt="">
-                </div>
-                <h2>Motor completo xd</h2>
-                <span>Envio Gratis</span>
-                <ul class="ctn-tag">
-                    <li>Auto</li>
-                </ul>
-                <a href=""><button>Me interesa</button></a>
-            </div>
-
+            
+            <!-- Producto #1 -->
             <div class="post" data-category="Motor">
 
                 <div class="ctn-img">
-                    <img src="img/Publicaciones/img1.jpg" alt="">
+
+                    <img src="img/Publicaciones/img1.jpeg">
+
                 </div>
-                <h2>Motor completo xd</h2>
+
+                <h2>Piatones</h2>
+                <span>$100000</span>
                 <span>Envio Gratis</span>
+
                 <ul class="ctn-tag">
+
                     <li>Motor</li>
+
                 </ul>
+
                 <a href=""><button>Me interesa</button></a>
+
             </div>
 
+            <!-- Producto #2 -->
+            <div class="post" data-category="Motor">
+
+                <div class="ctn-img">
+
+                    <img src="img/Publicaciones/img4.jpeg">
+
+                </div>
+
+                <h2>Árbol de levas</h2>
+                <span>$100000</span>
+                <span>Envio Gratis</span>
+
+                <ul class="ctn-tag">
+
+                    <li>Motor</li>
+
+                </ul>
+
+                <a href=""><button>Me interesa</button></a>
+
+            </div>
+
+            <!-- Producto #3 -->
+            <div class="post" data-category="Motor">
+
+                <div class="ctn-img">
+
+                    <img src="img/Publicaciones/img5.jpeg">
+
+                </div>
+
+                <h2>Sigueñal</h2>
+                <span>$100000</span>
+                <span>Envio Gratis</span>
+
+                <ul class="ctn-tag">
+
+                    <li>Motor</li>
+
+                </ul>
+
+                <a href=""><button>Me interesa</button></a>
+
+            </div>
+
+            <!-- Producto #4 -->
+            <div class="post" data-category="Motor">
+
+                <div class="ctn-img">
+
+                    <img src="img/Publicaciones/img6.jpeg">
+
+                </div>
+
+                <h2>Coginetes</h2>
+                <span>$100000</span>
+                <span>Envio Gratis</span>
+
+                <ul class="ctn-tag">
+
+                    <li>Motor</li>
+
+                </ul>
+
+                <a href=""><button>Me interesa</button></a>
+
+            </div>
+
+            <!-- Producto #5 -->
+            <div class="post" data-category="Motor Ofertas">
+
+                <div class="ctn-img">
+
+                    <img src="img/Publicaciones/img7.jpeg">
+
+                </div>
+
+                <h2>Válvulas</h2>
+                <span>$1000</span>
+                <span>Envio Gratis</span>
+
+                <ul class="ctn-tag">
+
+                    <li>Motor</li>
+                    <li>Ofertas</li>
+
+                </ul>
+
+                <a href=""><button>Me interesa</button></a>
+
+            </div>
+
+            <!-- Producto #6 -->
             <div class="post" data-category="Filtro">
 
                 <div class="ctn-img">
-                    <img src="img/Publicaciones/img1.jpg" alt="">
+
+                    <img src="img/Publicaciones/img8.jpeg">
+
                 </div>
-                <h2>Motor completo xd</h2>
+
+                <h2>Filtro de aceite</h2>
+                <span>$10000</span>
                 <span>Envio Gratis</span>
+
                 <ul class="ctn-tag">
+
                     <li>Filtro</li>
+
                 </ul>
+
                 <a href=""><button>Me interesa</button></a>
+
             </div>
 
-            <div class="post" data-category="Motor">
+            <!-- Producto #7 -->
+            <div class="post" data-category="Filtro">
 
                 <div class="ctn-img">
-                    <img src="img/Publicaciones/img1.jpg" alt="">
+
+                    <img src="img/Publicaciones/img9.jpeg">
+
                 </div>
-                <h2>Motor completo xd</h2>
+
+                <h2>Filtro de aires</h2>
+                <span>$10000</span>
                 <span>Envio Gratis</span>
+
                 <ul class="ctn-tag">
-                    <li>Motor</li>
+
+                    <li>Filtro</li>
+
                 </ul>
-                <a href=""><button>Me interesa</button></a>
-            </div>
 
-            <div class="post" data-category="Auto Ofertas">
+                <a href=""><button>Me interesa</button></a>
+
+            </div> 
+
+            <!-- Producto #8 -->
+            <div class="post" data-category="Filtro">
 
                 <div class="ctn-img">
-                    <img src="img/Publicaciones/img1.jpg" alt="">
+
+                    <img src="img/Publicaciones/img10.jpeg">
+
                 </div>
-                <h2>Motor completo xd</h2>
+
+                <h2>Filtro de combustible</h2>
+                <span>$10000</span>
                 <span>Envio Gratis</span>
+
                 <ul class="ctn-tag">
-                    <li>Auto</li>
+
+                    <li>Filtro</li>
+
+                </ul>
+
+                <a href=""><button>Me interesa</button></a>
+
+            </div> 
+
+            <!-- Producto #9 -->
+            <div class="post" data-category="Filtro Ofertas">
+
+                <div class="ctn-img">
+
+                    <img src="img/Publicaciones/img11.jpeg">
+
+                </div>
+
+                <h2>Filtro de cabina</h2>
+                <span>$1000</span>
+                <span>Envio Gratis</span>
+
+                <ul class="ctn-tag">
+
+                    <li>Filtro</li>
                     <li>Ofertas</li>
+
                 </ul>
+
                 <a href=""><button>Me interesa</button></a>
-            </div>
 
-    </div>
+            </div> 
 
-    </div>
+            <!-- Producto #10 -->
+            <div class="post" data-category="Electrico">
+
+                <div class="ctn-img">
+
+                    <img src="img/Publicaciones/img12.jpeg">
+
+                </div>
+
+                <h2>Fusibles</h2>
+                <span>$1000</span>
+                <span>Envio Gratis</span>
+
+                <ul class="ctn-tag">
+
+                    <li>Electrico</li>
+
+                </ul>
+
+                <a href=""><button>Me interesa</button></a>
+
+            </div> 
+
+            <!-- Producto #12 -->
+            <div class="post" data-category="Electrico">
+
+                <div class="ctn-img">
+
+                    <img src="img/Publicaciones/img14.jpeg">
+
+                </div>
+
+                <h2>Arneses</h2>
+                <span>$1000</span>
+                <span>Envio Gratis</span>
+
+                <ul class="ctn-tag">
+
+                    <li>Electrico</li>
+
+                </ul>
+
+                <a href=""><button>Me interesa</button></a>
+
+            </div>           
+
+            <!-- Producto #13 -->
+            <div class="post" data-category="Electrico">
+
+                <div class="ctn-img">
+
+                    <img src="img/Publicaciones/img15.jpeg">
+
+                </div>
+
+                <h2>Focos</h2>
+                <span>$1000</span>
+                <span>Envio Gratis</span>
+
+                <ul class="ctn-tag">
+
+                    <li>Electrico</li>
+
+                </ul>
+
+                <a href=""><button>Me interesa</button></a>
+
+            </div>           
+
+            <!-- Producto #14 -->
+            <div class="post" data-category="Electrico Ofertas">
+
+                <div class="ctn-img">
+
+                    <img src="img/Publicaciones/img16.jpeg">
+
+                </div>
+
+                <h2>Focos</h2>
+                <span>$1000</span>
+                <span>Envio Gratis</span>
+
+                <ul class="ctn-tag">
+
+                    <li>Electrico</li>
+                    <li>Ofertas</li>
+
+                </ul>
+
+                <a href=""><button>Me interesa</button></a>
+
+            </div>           
+     
+        </div>
+
+
     <!-- Footer -->
-
     <div class="container-footer">
+
         <Footer>
+
             <div class="logo-footer">
+
                 <img src="img/img1.png" alt="">
+
             </div>
+
             <!-- Iconos del footer -->
             <div class="redes">
-                <a href="#"><i class="fa-brands fa-facebook-f icon-redes"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram icon-redes"></i></a>
-                <a href="#"><i class="fa-brands fa-whatsapp icon-redes"></i></a>
+
+                <a href="contacto.html"><i class="fa-brands fa-facebook-f icon-redes"></i></a>
+                <a href="contacto.html"><i class="fa-brands fa-instagram icon-redes"></i></a>
+                <a href="contacto.html"><i class="fa-brands fa-whatsapp icon-redes"></i></a>
+
             </div>
 
             <hr>
 
             <h4>Online Repair Shop - Todos los derechos reservados</h4>
+
         </Footer>
-    </div>
 
     </div>
+
     <script src="js/script.js"></script>
+
 </body>
 </html>

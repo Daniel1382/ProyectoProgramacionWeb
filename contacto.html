@@ -5,12 +5,21 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum=scale=1.0, minimum-scale=1.0">
+
+        <!-- Titulo de la pagina -->
         <title>Online Repair Shop</title>
+
+        <!-- Pagina de iconos -->
         <script src="https://kit.fontawesome.com/0c92c3a794.js" crossorigin="anonymous"></script>
+
+        <!-- Icono del navegador -->
         <link rel="shortcut icon" href="img/img1.png" type="image/x-icon">
+
+        <!-- Enlaces Css -->
         <link rel="stylesheet" href="css/estilos.css">
         <link rel="stylesheet" href="css/contacto.css">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum=scale=1.0, minimum-scale=1.0">
+
     </head>
     
     
@@ -71,8 +80,33 @@
     
         </div>
 
-         <!-- Formulario -->
-         
+        <!-- Formulario creo que lo borrare -->
+        <div class="container-form">
+
+            <div class="content-box">
+
+                <div class="left"></div>
+
+                <div class="right">
+
+                    <h2>Contactanos</h2>
+
+                        <form id="contact-form" method="post" action="contact.php">
+
+                            <input name="name" type="Text" class="field" placeholder="Tu Nombre" required><br>
+                            <input name="email"type="Email" class="field" placeholder="Tu correo" required><br>
+                            <input type="Text" class="field" placeholder="Tu celular">
+                            <textarea name="message" class="field area"placeholder="Mensaje" row="4" required></textarea><br>
+                            <input type="submit" class="form-control submit" value="SEND MESSAGE">
+
+                        </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
         <!-- Footer -->
     
         <div class="container-footer">
@@ -101,7 +135,8 @@
     
         </div>
     
-        </div>
+
         <script src="js/script.js"></script>
+        
     </body>
 </html>

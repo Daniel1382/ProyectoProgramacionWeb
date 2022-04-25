@@ -199,14 +199,14 @@ input[type="radio"]{
 
 /*Sistema de filtrado*/
 
-[value="Auto"]:checked ~ .productos .post:not([data-category~="Auto"]),
+[value="Electrico"]:checked ~ .productos .post:not([data-category~="Electrico"]),
 [value="Motor"]:checked ~ .productos .post:not([data-category~="Motor"]),
 [value="Filtro"]:checked ~ .productos .post:not([data-category~="Filtro"]),
 [value="Ofertas"]:checked ~ .productos .post:not([data-category~="Ofertas"]){
     display: none;
 }
 
-[value="Auto"]:checked ~ .container-category [for="Auto"],
+[value="Electrico"]:checked ~ .container-category [for="Electrico"],
 [value="Motor"]:checked ~ .container-category [for="Motor"],
 [value="Filtro"]:checked ~ .container-category [for="Filtro"],
 [value="Todos"]:checked ~ .container-category [for="Todos"],
