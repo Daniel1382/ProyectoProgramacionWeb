@@ -25,7 +25,7 @@ header{
     height: 80px;
     background: white;
     box-shadow: 0 4px 25px -22px black;
-    z-index: 2;
+    z-index: 10;
 
 }
 
@@ -35,6 +35,7 @@ header{
     margin: auto;
     display: flex;
     justify-content: space-between;
+    position: relative;
 
 }
 
@@ -64,6 +65,7 @@ header{
 .menu{
 
     height: 80px;
+    margin-right: 60px;
 
 }
 
@@ -150,6 +152,81 @@ header{
 
 }
 
+
+/*buscador*/
+#ctn-icon-search{
+    position: absolute;
+    right: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}        
+#ctn-icon-search i{
+    font-size: 18px;
+    color:#777777;
+    cursor: pointer;
+    transition: all 300ms;
+}
+#ctn-icon-search i:hover{
+    color: gold;
+}
+
+#ctn-bars-search{
+    position: fixed;
+    top: -10px;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    z-index: 9;
+    transition: all 600ms;
+}
+#ctn-bars-search input{
+    display: block;
+    width: 1200px;
+    margin: auto;
+    padding: 10px;
+    font-size: 18px;
+    outline: 0;
+}
+
+#box-search{
+    position: fixed;
+    top: 165px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1200px;
+    background: #fff;
+    z-index: 8;
+    overflow: hidden;
+    display: none;
+}
+
+#box-search li a{
+    display: block;
+    width: 1200px;
+    color: #777777;
+    padding: 12px 20px;
+}
+
+#box-search li a:hover{
+    background: rgb(184, 183, 183);
+}
+
+#box-search li a i{
+    margin-right: 10px;
+    color: #777777;
+}
+
+#cover-ctn-search{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 7;
+    display: none;
+}
 /*Footer*/
 
 .container-footer{
@@ -250,6 +327,12 @@ header{
         padding: 0 20px;
 
     }
+    
+    #ctn-bars-search,
+    #ctn-bars-search input,
+    #box-search{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 800px){
@@ -325,7 +408,9 @@ header{
     #icon-menu{
         
         display: flex;
+        right: 60px;
 
     }
+    
 
 }
